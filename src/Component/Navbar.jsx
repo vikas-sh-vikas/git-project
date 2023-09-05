@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useState} from "react";
 import { Link } from "react-router-dom";
 import { Button, Row, Headers } from "react-bootstrap";
 import "../App.css";
@@ -27,11 +27,21 @@ function Navbar() {
 //   });
 // }
 // </script>
+// Add active class to the current button (highlight it)
+const [buttonClass, setButtonClass] = useState(0); // Initialize with the default active button
+const [activeButton, setActiveButton] = useState( 0); // Initialize with the default active button
+
+const handleClick = (buttonNumber) => {
+  
+  setActiveButton(buttonNumber);
+};
   return (
     <div style={{paddingBottom:"40px"}}>
       <h1 style={{padding:"40px 40px 10px 40px"}} id="header">
         Dopetrope
       </h1>
+
+      
 
       <nav class="navbar navbar-expand-lg navbar-light m-2">
         <button
@@ -51,9 +61,13 @@ function Navbar() {
         >
           <div class="navbar-nav" id="myDIV">
 
-            <a className="nav-link navHover" href="/">
+            <Link          
+            className={`buton ${activeButton === 1 ? 'active' : ''} nav-link navHover`}  to="/"
+            onClick={() => handleClick(1)}
+            // className="nav-link navHover" href="/"
+            >
               Home  
-            </a>
+            </Link>
             <a className="" style={{textDecoration:"none"}}>
               <MDBNavbar class="nav-item nav-link navHover" expand="lg" light bgColor="light" >
                 <MDBContainer fluid>
@@ -123,15 +137,24 @@ function Navbar() {
                 </MDBContainer>
               </MDBNavbar>
             </a>
-            <a className="nav-item nav-link navHover" href="/LeftSidebar">
+            <Link 
+            className={`buton ${activeButton === 2 ? 'active' : ''} nav-link navHover`} to="/LeftSidebar"
+            onClick={() => handleClick(2)}
+            >
               Left SideBar
-            </a>
-            <a className="nav-item nav-link navHover" href="/RightSideBar">
+            </Link>
+            <Link 
+            className={`buton ${activeButton === 3 ? 'active' : ''} nav-link navHover`} to="/RightSideBar"
+            onClick={() => handleClick(3)}
+            >
               Right SideBar
-            </a>
-            <a className="nav-item nav-link navHover" href="/NoSidebar">
+            </Link>
+            <Link 
+            className={`buton ${activeButton === 4 ? 'active' : ''} nav-link navHover`} to="/NoSidebar"
+            onClick={() => handleClick(4)}
+            >
               No SideBar
-            </a>
+            </Link>
           </div>
         </div>
       </nav>

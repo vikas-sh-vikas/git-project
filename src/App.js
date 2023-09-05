@@ -5,11 +5,14 @@ import Home from './Component/Home';
 import LeftSideBar from './Component/LeftSidebar';
 import RightSideBar from './Component/RightSidebar';
 import NoSidebar from './Component/NoSidebar';
+import Navbar from './Component/Navbar';
 
 function App() {
   return (
     <div className="App">
+       
         <BrowserRouter>
+        <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/LeftSidebar" element={<LeftSideBar />} />

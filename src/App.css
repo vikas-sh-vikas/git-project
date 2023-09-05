@@ -185,12 +185,18 @@ h3,p{
   display: block;
   }
   .navHover:hover {
-    background-color: #f3f3f3;
+    background-color: #f3f3f3 !important;
     
     /* color: white !important; */
   }
+
+  .buton.active{
+    background-color: #d52349;
+    color: white !important;
+  }
   .navHover{
     border-radius: 5px;
+    background-color: #f3f3f3;
     padding: 0.6em 1.2em 0.6em 1.2em !important;
     font-style: italic;
   }

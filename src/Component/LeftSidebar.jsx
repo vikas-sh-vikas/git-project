@@ -17,7 +17,7 @@ import Footer from "./Footer";
 function LeftSideBar() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
 
       {/* </Row> */}
       <div className="divBack">

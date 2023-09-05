@@ -14,7 +14,7 @@ import Footer from "./Footer";
 function Home() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <div
         class="p-5 d-flex justify-content-center align-items-center text-center bg-image rounded-3"
         style={{
