@@ -30,7 +30,7 @@ function Home() {
         <div class="mask">
           <div class="d-flex justify-content-center align-items-center h-100">
             <div class="bg-dark mainContent" id="infoImage">
-              <h2 class="mb-3 text-white" id="infoHeader">Vikas. This is Dopetrope.</h2>
+              <h2 class="mb-3 text-white" id="infoHeader">Howdy. This is Dopetrope.</h2>
               <p class="mb-3 maskPara text-danger" id="infoPara">
                 A responsive template by HTML5 UP
               </p>
