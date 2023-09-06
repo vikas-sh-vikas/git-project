@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
+@import './MyScss.scss'; 
 
 .App {
   text-align: center;
@@ -14,7 +15,13 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.buttonStyleGetstarted{
+  display: flex;
+  justify-content: end;
+}
+.buttonStyleLearMore{
+  display: flex;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -56,8 +63,6 @@
   transform: rotate(180deg);
 } 
 .pentagon2 {
-  /* margin: 0 auto;
-  padding-bottom: 25px; */
   width: 60px;
   height: 70px;
   clip-path: polygon(50% 15%, 100% 38%, 100% 1000%, 0% 100%, 0% 38%);
@@ -68,7 +73,6 @@
   position: absolute;
   left: 0;
   top: 1.3em;
-  /* background-color: #d52349; */
   height: 3.5em;
   text-align: center;
   color: #fff;
@@ -154,7 +158,6 @@ h3,p{
     justify-content: center;
     align-items: center;
     margin-right: 10px;
-    /* background: #888; */
 }
 #copyright {
   text-align: center;
@@ -187,7 +190,6 @@ h3,p{
   .navHover:hover {
     background-color: #f3f3f3 !important;
     
-    /* color: white !important; */
   }
 
   .buton.active{
@@ -200,11 +202,7 @@ h3,p{
     padding: 0.6em 1.2em 0.6em 1.2em !important;
     font-style: italic;
   }
-/* .iconCard:hover
- {
-  margin:0 10px;
-  box-shadow: 6px 0 4px -4px #999, -6px 0 4px -4px #999; 
-} */
+
 .divBack{
   background-color:#F7F7F7;
 }
@@ -227,7 +225,6 @@ h3,p{
 #infoPara{
   font-size: 24px;
   font-family: 'Source Sans Pro';
-  /* font-weight: 700; */
   text-align: center;
   color: #d52349;
   margin: 0px !important;
@@ -262,7 +259,6 @@ h3,p{
   font-family: 'Source Sans Pro';
   color: #252122;
   font-weight: 700;
-  /* line-height: 2em; */
   padding-bottom: 20px;
   text-align: start;
 }
@@ -272,7 +268,6 @@ h3,p{
   color: #5d5d5d;
   font-weight: 300;
   text-align: center;
-  /* font-weight: 700; */
   line-height: 1.75em;
   text-align: start;
   margin-bottom: 2rem;
@@ -284,7 +279,6 @@ h3,p{
   font-style: italic;
   font-weight: 300;
   text-align: center;
-  /* font-weight: 700; */
   line-height: 1.75em;
   text-align: start;
   margin-bottom: 2rem;
@@ -296,15 +290,16 @@ h3,p{
   font-style: italic;
   font-weight: 300;
   text-align: center;
-  /* font-weight: 700; */
   line-height: 1.75em;
   text-align: start;
   margin-bottom: 2rem;
 }
-#cardButton{
+.cardButton{
   font-weight: 700;
   outline: 0;
-  font-size: 1.1em;
+  height: 48px;
+  width: 190px;
+  font-size: 15px;
   padding: 0.65em 1.5em 0.65em 1.5em;
   text-align: center;
 }
@@ -315,3 +310,60 @@ h3,p{
   font-weight: 700;
   text-align: start;
 }
+
+.container1 {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 70em;
+}
+
+/* Media query for extra-large screens */
+@media screen and (max-width: 1200px) {
+  .container1 {
+    width: 65em; /* Keep the same width */
+  }
+}
+
+/* Media query for large screens */
+@media screen and (max-width: 991px) {
+  .container1 {
+    width: calc(100% - 60px); /* Reduce width by 60px */
+  }
+  .buttonFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cardButton{
+    margin: 0px 0px 10px 0px !important;
+    width: 100%;
+  }
+}
+
+/* Media query for medium screens */
+@media screen and (max-width: 768px) {
+  .container1 {
+    width: calc(100% - 80px); /* Reduce width by 80px */
+
+  }
+  .buttonStyleGetstarted{
+    justify-content: center;
+    align-items: center;
+  }
+  .buttonStyleLearMore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 576px) {
+  .container1 {
+    width: calc(100% - 40px); /* Reduce width by 40px */
+  }
+
+
+}
+

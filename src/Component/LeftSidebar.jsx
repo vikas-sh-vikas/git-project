@@ -20,12 +20,12 @@ function LeftSideBar() {
       {/* <Navbar /> */}
 
       {/* </Row> */}
-      <div className="divBack">
-        <div style={{ margin: "0rem 14rem", padding: "50px 0px" }}>
+      <div className="divBack  d-flex justify-content-center align-items-center">
+        <div className="container1" style={{ padding: "50px 0px" }}>
           {/* <div className="d-flex" style={{ width: "100%" }}> */}
-          <Row style={{ paddingBottom: "24px" }}>
+          <div className="row" style={{ paddingBottom: "24px" }}>
             {/* <div className="box1" style={{ width: "33.33%" }}> */}
-            <Col md={4}>
+            <div class="col-lg-4 col-md-12-col-sm-12 order-lg-1 order-md-2 order-sm-2">
               <div style={{ paddingBottom: "24px" }}>
                 <div class="card padding-0">
                   <div class="card-body p-0">
@@ -51,6 +51,7 @@ function LeftSideBar() {
                   </div>
                 </div>
               </div>
+              <div style={{ paddingBottom: "24px" }}>
               <div class="card text-center padding-0">
                 <div class="card-body p-0">
                   <div style={{ padding: "44px 28px", textAlign: "left" }}>
@@ -81,9 +82,13 @@ function LeftSideBar() {
                   </div>
                 </div>
               </div>
-            </Col>
+              </div>
+
+            </div>
             {/* </div> */}
-            <Col md={8}>
+            <div class="col-lg-8 col-md-12-col-sm-12 order-lg-2 order-md-1 order-sm-1">
+            <div style={{ paddingBottom: "24px" }}>
+
               <div class="card text-center">
                 <div class="card-body p-0">
                   <div
@@ -122,8 +127,9 @@ function LeftSideBar() {
                   </div>
                 </div>
               </div>
-            </Col>
-          </Row>
+              </div>
+            </div>
+          </div>
           {/* </div> */}
         </div>
       </div>

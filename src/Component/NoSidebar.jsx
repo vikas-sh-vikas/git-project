@@ -20,8 +20,8 @@ function NoSidebar() {
       {/* <Navbar /> */}
 
       {/* </Row> */}
-      <div className="divBack">
-        <div style={{ margin: "0rem 14rem", padding: "50px 0px" }}>
+      <div className="divBack d-flex justify-content-center align-items-center">
+        <div className="container1" style={{padding: "50px 0px" }}>
           {/* <div className="d-flex" style={{ width: "100%" }}> */}
           <Row style={{ paddingBottom: "24px" }}>
             {/* <div className="box1" style={{ width: "33.33%" }}> */}

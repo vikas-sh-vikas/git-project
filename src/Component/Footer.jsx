@@ -16,10 +16,9 @@ import {
 function Footer() {
   return (
     <div>
-      <section id="footer" >
-        {/* <div class="container" > */}
-          <div class="row" style={{ margin: "0rem 14rem", padding: "50px 0px" }}>
-            <div class="col-8 col-12-medium">
+      <section className="d-flex justify-content-center align-items-center" id="footer" >
+          <div class="row container1" style={{ padding: "50px 0px" }}>
+            <div class="col-lg-8 col-md-12 col-sm-12">
               <section>
                 <header>
                   <h2 class="footerHeader">Blandit nisl adipiscing</h2>
@@ -36,7 +35,7 @@ function Footer() {
                         Lorem dolor sit amet veroeros
                       </a>
                     </h3>
-                    <p id="para">
+                    <p className="FooterPara">
                       Ipsum dolor sit amet veroeros consequat blandit ipsum
                       phasellus lorem consequat etiam.
                     </p>
@@ -55,7 +54,7 @@ function Footer() {
                         Ipsum sed blandit nisl consequat
                       </a>
                     </h3>
-                    <p id="para">
+                    <p className="FooterPara">
                       Blandit phasellus lorem ipsum dolor tempor sapien tortor
                       hendrerit adipiscing feugiat lorem.
                     </p>
@@ -73,7 +72,7 @@ function Footer() {
                         Magna tempus lorem feugiat
                       </a>
                     </h3>
-                    <p id="para">
+                    <p className="FooterPara">
                       Dolore consequat sed phasellus lorem sed etiam nullam
                       dolor etiam sed amet sit consequat.
                     </p>
@@ -91,7 +90,7 @@ function Footer() {
                         Dolore tempus ipsum feugiat nulla
                       </a>
                     </h3>
-                    <p id="para">
+                    <p className="FooterPara">
                       Feugiat lorem dolor sed nullam tempus lorem ipsum dolor
                       sit amet nullam consequat.
                     </p>
@@ -109,7 +108,7 @@ function Footer() {
                         Blandit tempus aliquam?
                       </a>
                     </h3>
-                    <p id="para">
+                    <p className="FooterPara">
                       Feugiat sed tempus blandit tempus adipiscing nisl lorem
                       ipsum dolor sit amet dolore.
                     </p>
@@ -117,7 +116,7 @@ function Footer() {
                 </div>
               </section>
             </div>
-            <div class="col-4 col-12-medium">
+            <div class="col-lg-4 col-md-12-col-sm-12">
               <section>
                 <header>
                   <h2 class="footerHeader">What's this all about?</h2>
@@ -127,14 +126,13 @@ function Footer() {
                   style={{
                     backgroundImage: "url(../9.jpg)",
                     backgroundSize: "cover",
-                    width: "340px",
-                    height: "150px",
-                  }}
+                    position: "relative",
+                    backgroundPosition: "center center",
+                    width: "auto", 
+                    left: "1.75em",
+                    top: "1.75em",
+                    margin: "-2.5em 30px 4.25em -1.5em",}}
                 ></div>
-
-                <a href="#" class="image featured">
-                  <img src="images/pic10.jpg" alt="" />
-                </a>
                 <p style={{ textAlign: "start" }} id="para">
                   This is <strong>Dopetrope</strong> a free, fully responsive
                   HTML5 site template by
@@ -154,7 +152,7 @@ function Footer() {
                 </footer>
               </section>
             </div>
-            <div class="col-4 col-6-medium col-12-small">
+            <div class="col-lg-4 col-md-6 col-sm-12">
               <section>
                 <header>
                   <h2 class="footerHeader">Tempus consequat</h2>
@@ -191,7 +189,7 @@ function Footer() {
                 </div>
               </section>
             </div>
-            <div class="col-4 col-6-medium col-12-small">
+            <div class="col-lg-4 col-md-6 col-sm-12">
               <section>
                 <header>
                   <h2 class="footerHeader">Ipsum et phasellus</h2>
@@ -228,7 +226,7 @@ function Footer() {
                 </div>
               </section>
             </div>
-            <div class="col-4 col-12-medium">
+            <div class="col-lg-4 col-md-12 col-sm-12">
               <section>
                 <header>
                   <h2 class="footerHeader">Vitae tempor lorem</h2>
@@ -315,7 +313,6 @@ function Footer() {
               </section>
             </div>
             <div class="col-12">
-              {/* <!-- Copyright --> */}
               <div id="copyright">
                 <div className="footerRights">
                   &copy; Untitled. All rights reserved.
@@ -323,7 +320,6 @@ function Footer() {
               </div>
             </div>
           </div>
-        {/* </div> */}
       </section>
     </div>
   );

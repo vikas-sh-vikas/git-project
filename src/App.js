@@ -1,5 +1,7 @@
 import logo from './logo.svg';
+import ReactDOM from 'react-dom/client';
 import './App.css';
+import './MyScss.scss'; 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from './Component/Home';
 import LeftSideBar from './Component/LeftSidebar';
