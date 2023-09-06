@@ -24,11 +24,13 @@ function Footer() {
                   <h2 class="footerHeader">Blandit nisl adipiscing</h2>
                 </header>
                 <div className="d-flex pb-2 pt-2">
+                <div>
                   <div class="d-flex justify-content-center align-items-end bg-danger pentagon2">
                     <span class="date">
                       Jan <strong>27</strong>
                     </span>
                   </div>
+                </div>
                   <div style={{paddingLeft:"25px"}}>
                     <h3>
                       <a href="#" class="footerText">
@@ -42,11 +44,13 @@ function Footer() {
                   </div>
                 </div>
                 <div className="d-flex pb-2 pt-2">
+                  <div>
                   <div class="d-flex justify-content-center align-items-end bg-danger pentagon2">
                     <span class="date">
                       Jan <strong>23</strong>
                     </span>
                     .
+                  </div>
                   </div>
                   <div style={{paddingLeft:"25px"}}>
                     <h3>
@@ -61,10 +65,12 @@ function Footer() {
                   </div>
                 </div>
                 <div className="d-flex pb-2 pt-2">
+                  <div>
                   <div class="d-flex justify-content-center align-items-end bg-danger pentagon2">
                     <span class="date">
                       Jan <strong>15</strong>
                     </span>
+                  </div>
                   </div>
                   <div style={{paddingLeft:"25px"}}>
                     <h3>
@@ -79,10 +85,12 @@ function Footer() {
                   </div>
                 </div>
                 <div className="d-flex pb-2 pt-2">
+                  <div>
                   <div class="d-flex justify-content-center align-items-end bg-danger pentagon2">
                     <span class="date">
                       Jan <strong>12</strong>
                     </span>
+                  </div>
                   </div>
                   <div style={{paddingLeft:"25px"}}>
                     <h3>
@@ -97,10 +105,12 @@ function Footer() {
                   </div>
                 </div>
                 <div className="d-flex pb-2 pt-2">
+                  <div>
                   <div class="d-flex justify-content-center align-items-end bg-danger pentagon2">
                     <span class="date">
                       Jan <strong>10</strong>
                     </span>
+                  </div>
                   </div>
                   <div style={{paddingLeft:"25px"}}>
                     <h3>
