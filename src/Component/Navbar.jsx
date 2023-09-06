@@ -16,18 +16,7 @@ import {
 } from "mdb-react-ui-kit";
 
 function Navbar() {
-  // <script>
-// var header = document.getElementById("myDIV");
-// var btns = header.getElementsByClassName("btn");
-// for (var i = 0; i < btns.length; i++) {
-//   btns[i].addEventListener("click", function() {
-//   var current = document.getElementsByClassName("active");
-//   current[0].className = current[0].className.replace(" active", "");
-//   this.className += " active";
-//   });
-// }
-// </script>
-// Add active class to the current button (highlight it)
+
 const [buttonClass, setButtonClass] = useState(0); // Initialize with the default active button
 const [activeButton, setActiveButton] = useState( 0); // Initialize with the default active button
 
@@ -35,12 +24,29 @@ const handleClick = (buttonNumber) => {
   
   setActiveButton(buttonNumber);
 };
+// const menuclick = () => {
+//   console.log("Menu Click")
+// }
+function menuclick() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
   return (
     <div style={{paddingBottom:"40px"}}>
       <h1 style={{padding:"40px 40px 10px 40px"}} id="header">
         Dopetrope
       </h1>
-
+      <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onClick={closeNav}>&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
       
 
       <nav class="navbar navbar-expand-lg navbar-light m-2">
@@ -52,7 +58,8 @@ const handleClick = (buttonNumber) => {
           aria-controls="navbarNavAltMarkup"
           aria-expanded="false"
           aria-label="Toggle navigation"
-        >
+          onClick={menuclick}
+          >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
@@ -64,7 +71,6 @@ const handleClick = (buttonNumber) => {
             <Link          
             className={`buton ${activeButton === 1 ? 'active' : ''} nav-link navHover`}  to="/"
             onClick={() => handleClick(1)}
-            // className="nav-link navHover" href="/"
             >
               Home  
             </Link>

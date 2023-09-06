@@ -6,6 +6,9 @@ import { FaBolt, FaCog, FaStar, FaFile, FaComment } from "react-icons/fa";
 import Footer from "./Footer";
 
 function Home() {
+  const menuclick = () => {
+    console.log("Menu Click")
+  }
   return (
     <div>
       {/* <Navbar /> */}
