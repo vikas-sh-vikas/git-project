@@ -92,7 +92,7 @@ function LeftSideBar() {
                     <div
                       class="p-5 mb-5 d-flex justify-content-center align-items-center text-center bg-image"
                       style={{
-                        backgroundImage: "url(../Untitled.jpg)",
+                        backgroundImage: `url(${CardObj1.card1[0].src})`,
                         backgroundSize: "cover",
                         backgroundPosition: "center center",
                         backgroundSize: "auto 100%",

@@ -29,7 +29,7 @@ function NoSidebar() {
                   <div
                     class="p-5 mb-5 d-flex justify-content-center align-items-center text-center bg-image"
                     style={{
-                      backgroundImage: "url(../Untitled.jpg)",
+                      backgroundImage: `url(${CardObj1.card1[0].src})`,
                       backgroundSize: "cover",
                       backgroundPosition: "center center",
                       backgroundSize: "auto 100%",
@@ -39,7 +39,7 @@ function NoSidebar() {
                     }}
                   ></div>
                   <div style={{ padding: "44px 28px", textAlign: "left" }}>
-                    <h2 class="LeftHeader">{CardObj1.card1[0].header1}</h2>
+                    <h2 class="LeftHeader">{CardObj1.card1[0].headerN}</h2>
 
                     <p class="card-text" id="paraHeader">
                       {CardObj1.card1[0].paragraph1}

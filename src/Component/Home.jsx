@@ -46,7 +46,7 @@ function Home() {
               return (
                 <div className="col-lg-4 col-md-12 col-m-12 pb-4">
                   {index == 0 && (
-                    <div class="card text-center border-0 iconCard">
+                    <div class="card text-center border-0 iconCard pt-5">
                       <div class="card-body">
                         <div class="d-flex justify-content-center align-items-end bg-danger pentagon">
                           <div className="">
@@ -68,7 +68,7 @@ function Home() {
                     </div>
                   )}
                   {index == 1 && (
-                    <div class="card text-center border-0 iconCard">
+                    <div class="card text-center border-0 iconCard pt-5">
                       <div class="card-body">
                         <div class="d-flex justify-content-center align-items-end bg-dark pentagon">
                           <div className="">
@@ -90,7 +90,7 @@ function Home() {
                     </div>
                   )}
                   {index == 2 && (
-                    <div class="card text-center border-0 iconCard">
+                    <div class="card text-center border-0 iconCard pt-5">
                       <div class="card-body">
                         <div class="d-flex justify-content-center align-items-end bg-secondary pentagon">
                           <div className="">
@@ -170,9 +170,12 @@ function Home() {
                         <p class="card-text" id="portPara">
                           {item.para}
                         </p>
-                        <a href="#" id="cardButton" class="btn btn-dark">
-                          Find out more
-                        </a>
+                        
+                        <div>
+                          <a href="#" id="cardButton" class="btn btn-dark">
+                            Find out more
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
