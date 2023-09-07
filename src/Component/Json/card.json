@@ -1,0 +1,35 @@
+{"data" : [
+    {
+      "src": "./1.jpg",
+      "title": "Beautiful Sunset",
+      "para": "A stunning sunset over the horizon, painting the sky in warm hues of orange and pink."
+    },
+    {
+      "src": "./2.jpg",
+      "title": "Majestic Mountains",
+      "para": "A breathtaking view of towering mountains, covered in a blanket of lush green forests."
+    },
+    {
+      "src": "./3.jpg",
+      "title": "Serene Beach",
+      "para": "A tranquil beach scene with gentle waves lapping against the shore under a clear blue sky."
+    },
+    {
+      "src": "./4.jpg",
+      "title": "Enchanting Forest",
+      "para": "A mystical forest with sunlight filtering through the dense canopy, creating a magical atmosphere."
+    },
+    {
+      "src": "./5.jpg",
+      "title": "Urban Cityscape",
+      "para": "A vibrant cityscape at night, with illuminated skyscrapers and busy streets filled with life."
+    },
+    {
+      "src": "./6.jpg",
+      "title": "Rural Countryside",
+      "para": "A peaceful rural countryside with rolling hills, quaint cottages, and green pastures."
+    }
+    
+    ]
+}
+

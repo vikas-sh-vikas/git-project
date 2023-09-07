@@ -1,0 +1,19 @@
+
+{"companyInfo" : [
+  {
+    "header": "What's this all about?",
+    "src": "../9.jpg",
+    "paragraph1": "This is <strong>Dopetrope</strong> a free, fully responsive HTML5 site template by",
+    "paragraph2": "license so feel free to use it for any personal or commercial project &ndash; just don't forget to credit us!",
+    "link1": "AJ",
+    "link2": "HTML5 UP",
+    "link3": "Creative Commons Attribution",
+    "header2": "Vitae tempor lorem",
+    "address": "Untitled Incorporated 1234 Somewhere Road Suite Nashville, TN 00000-0000",
+    "address1": "1234 Somewhere Road Suite",
+    "address2": "Nashville, TN 00000-0000",
+    "mail": "omeone@untitled.tld",
+    "phone": "(800) 000-0000"
+  }
+    ]
+}

@@ -13,8 +13,14 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import Footer from "./Footer";
+import cardData1 from "./Json/leftSideCard1.json";
+import cardData2 from "./Json/leftSideCard2.json";
+import cardData3 from "./Json/leftSideCard3.json";
 
 function RightSidebar() {
+    const CardObj1 = cardData1;
+    const CardObj2 = cardData2;
+    const CardObj3 = cardData3;
   return (
     <div>
 
@@ -38,65 +44,32 @@ function RightSidebar() {
                     }}
                   ></div>
                   <div style={{ padding: "44px 28px", textAlign: "left" }}>
-                    <h2 class="LeftHeader">Left Sidebar</h2>
+                    <h2 class="LeftHeader">{CardObj1.card1[0].header1}</h2>
 
                     <p class="card-text" id="paraHeader">
-                      Lorem ipsum dolor sit amet feugiat
+                    {CardObj1.card1[0].paragraph1}
                     </p>
                     <p class="card-text" id="portPara">
-                      Vestibulum scelerisque ultricies libero id hendrerit.
-                      Vivamus malesuada quam faucibus ante dignissim auctor
-                      hendrerit libero placerat. Nulla facilisi. Proin aliquam
-                      felis non arcu molestie at accumsan turpis commodo. Proin
-                      elementum, nibh non egestas sodales, augue quam aliquet
-                      est, id egestas diam justo adipiscing ante. Pellentesque
-                      tempus nulla non urna eleifend ut ultrices nisi faucibus.
+                    {CardObj1.card1[0].paragraph2}{" "}
                     </p>
                     <p class="card-text" id="portPara">
-                      Praesent a dolor leo. Duis in felis in tortor lobortis
-                      volutpat et pretium tellus. Vestibulum ac ante nisl, a
-                      elementum odio. Duis semper risus et lectus commodo
-                      fringilla. Maecenas sagittis convallis justo vel mattis.
-                      placerat, nunc diam iaculis massa, et aliquet nibh leo non
-                      nisl vitae porta lobortis, enim neque fringilla nunc, eget
-                      faucibus lacus sem quis nunc suspendisse nec lectus sit
-                      amet augue rutrum vulputate ut ut mi. Aenean elementum, mi
-                      sit amet porttitor lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit. Lorem ipsum dolor sit amet nullam
-                      consequat feugiat dolore tempus.{" "}
+                    {CardObj1.card1[0].paragraph3}{" "}
                     </p>
-                    <h5 class="portfolioHeader">Something else</h5>
+                    <h5 class="portfolioHeader">
+                    {CardObj1.card1[0].header2}
+                      </h5>
                     <p class="card-text" id="portPara">
-                      Elementum odio duis semper risus et lectus commodo
-                      fringilla. Maecenas sagittis convallis justo vel mattis.
-                      placerat, nunc diam iaculis massa, et aliquet nibh leo non
-                      nisl vitae porta lobortis, enim neque fringilla nunc, eget
-                      faucibus lacus sem quis nunc suspendisse nec lectus sit
-                      amet augue rutrum vulputate ut ut mi. Aenean elementum, mi
-                      sit amet porttitor lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit. Lorem ipsum dolor sit amet nullam
-                      consequat feugiat dolore tempus.
+                    {CardObj1.card1[0].paragraph4}
                     </p>
                     <p class="card-text" id="portPara">
-                      Nunc diam iaculis massa, et aliquet nibh leo non nisl
-                      vitae porta lobortis, enim neque fringilla nunc, eget
-                      faucibus lacus sem quis nunc suspendisse nec lectus sit
-                      amet augue rutrum vulputate ut ut mi. Aenean elementum, mi
-                      sit amet porttitor lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit. Lorem ipsum dolor sit amet nullam
-                      consequat feugiat dolore tempus.{" "}
+                    {CardObj1.card1[0].paragraph5}
                     </p>
-                    <h5 class="portfolioHeader">So in conclusion ...</h5>
+                    <h5 class="portfolioHeader">
+                    {CardObj1.card1[0].header3}
+                      
+                    </h5>
                     <p class="card-text" id="portPara">
-                      Nunc diam iaculis massa, et aliquet nibh leo non nisl
-                      vitae porta lobortis, enim neque fringilla nunc, eget
-                      faucibus lacus sem quis nunc suspendisse nec lectus sit
-                      amet augue rutrum vulputate ut ut mi. Aenean elementum, mi
-                      sit amet porttitor lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit. Lorem ipsum dolor sit amet nullam
-                      consequat feugiat dolore tempus. Elementum odio duis
-                      semper risus et lectus commodo fringilla. Maecenas
-                      sagittis convallis justo vel mattis
+                    {CardObj1.card1[0].paragraph6}{" "}
                     </p>
                   </div>
                 </div>
@@ -117,11 +90,12 @@ function RightSidebar() {
                       }}
                     ></div>
                     <div style={{ padding: "44px 28px", textAlign: "left" }}>
-                      <h5 class="portfolioHeader">Ipsum feugiat et dolor</h5>
+                      <h5 class="portfolioHeader">
+                      {CardObj2.card2[0].header1}
+                        
+                        </h5>
                       <p class="card-text" id="portPara">
-                        Lorem ipsum dolor sit amet sit veroeros sed amet blandit
-                        consequat veroeros lorem blandit adipiscing et feugiat
-                        phasellus tempus dolore ipsum lorem dolore.
+                      {CardObj2.card2[0].paragraph1}
                       </p>
                       <a href="#" id="cardButton" class="btn btn-dark">
                         Find out more
@@ -134,25 +108,32 @@ function RightSidebar() {
                 <div class="card text-center padding-0">
                   <div class="card-body p-0">
                     <div style={{ padding: "44px 28px", textAlign: "left" }}>
-                      <h5 class="portfolioHeader">Lorem ipsum</h5>
+                      <h5 class="portfolioHeader">
+                      {CardObj3.card3[0].header1}
+                      </h5>
                       <p class="card-text" id="portPara">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dicta quisquam sapiente, molestiae aliquid fugit
-                        repellat nostrum. Doloribus sunt consequatur fugit
-                        sapiente, doloremque recusandae soluta nobis.
+                      {CardObj3.card3[0].paragraph1}
                       </p>
                       <div style={{ paddingBottom: "32px" }}>
                         <div className="linkTextLeftbar">
-                          <a href="#">Sed et blandit consequat sed</a>
+                          <a href="#">
+                          <a href="#">{CardObj3.card3[0].link1} </a>
+                            </a>
                         </div>
                         <div className="linkTextLeftbar">
-                          <a href="#">Hendrerit tortor vitae sapien dolore</a>
+                          <a href="#">
+                          <a href="#">{CardObj3.card3[0].link2} </a>
+                            </a>
                         </div>
                         <div className="linkTextLeftbar">
-                          <a href="#">Sapien id suscipit magna sed felis</a>
+                          <a href="#">
+                          <a href="#">{CardObj3.card3[0].link3} </a>
+                            </a>
                         </div>
                         <div className="linkTextLeftbar">
-                          <a href="#">Aptent taciti sociosqu ad litora</a>
+                          <a href="#">
+                          <a href="#">{CardObj3.card3[0].link4} </a>
+                            </a>
                         </div>
                       </div>
                       <a href="#" id="cardButton" class="btn btn-dark">
