@@ -17,14 +17,9 @@ import Footer from "./Footer";
 function LeftSideBar() {
   return (
     <div>
-      {/* <Navbar /> */}
-
-      {/* </Row> */}
       <div className="divBack  d-flex justify-content-center align-items-center">
         <div className="container1" style={{ padding: "50px 0px" }}>
-          {/* <div className="d-flex" style={{ width: "100%" }}> */}
           <div className="row" style={{ paddingBottom: "24px" }}>
-            {/* <div className="box1" style={{ width: "33.33%" }}> */}
             <div class="col-lg-4 col-md-12-col-sm-12 order-lg-1 order-md-2 order-sm-2">
               <div style={{ paddingBottom: "24px" }}>
                 <div class="card padding-0">
@@ -85,7 +80,6 @@ function LeftSideBar() {
               </div>
 
             </div>
-            {/* </div> */}
             <div class="col-lg-8 col-md-12-col-sm-12 order-lg-2 order-md-1 order-sm-1">
             <div style={{ paddingBottom: "24px" }}>
 
@@ -130,7 +124,6 @@ function LeftSideBar() {
               </div>
             </div>
           </div>
-          {/* </div> */}
         </div>
       </div>
 

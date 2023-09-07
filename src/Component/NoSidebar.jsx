@@ -17,14 +17,10 @@ import Footer from "./Footer";
 function NoSidebar() {
   return (
     <div>
-      {/* <Navbar /> */}
 
-      {/* </Row> */}
       <div className="divBack d-flex justify-content-center align-items-center">
         <div className="container1" style={{padding: "50px 0px" }}>
-          {/* <div className="d-flex" style={{ width: "100%" }}> */}
           <Row style={{ paddingBottom: "24px" }}>
-            {/* <div className="box1" style={{ width: "33.33%" }}> */}
             <Col md={12}>
               <div class="card text-center">
                 <div class="card-body p-0">
@@ -65,10 +61,8 @@ function NoSidebar() {
                 </div>
               </div>
             </Col>
-            {/* </div> */}
 
           </Row>
-          {/* </div> */}
         </div>
       </div>
 

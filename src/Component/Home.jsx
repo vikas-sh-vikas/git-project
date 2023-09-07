@@ -6,9 +6,7 @@ import { FaBolt, FaCog, FaStar, FaFile, FaComment } from "react-icons/fa";
 import Footer from "./Footer";
 
 function Home() {
-  const menuclick = () => {
-    console.log("Menu Click")
-  }
+
   return (
     <div>
       {/* <Navbar /> */}
@@ -84,7 +82,7 @@ function Home() {
               </div>
             </div>
             <div className="col-lg-4 col-md-12 col-m-12 pb-4">
-              <div class="card text-center border-0">
+              <div class="card text-center border-0 iconCard">
                 <div class="card-body">
                   <div class="d-flex justify-content-center align-items-end bg-secondary pentagon">
                     <div className="icon">

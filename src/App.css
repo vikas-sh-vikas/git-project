@@ -191,7 +191,8 @@ h3,p{
     background-color: #f3f3f3 !important;
     
   }
-
+  .iconCard:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  }
   .buton.active{
     background-color: #d52349;
     color: white !important;
@@ -339,6 +340,9 @@ h3,p{
     margin: 0px 0px 10px 0px !important;
     width: 100%;
   }
+  .navbarLine{
+    display: none;
+  }
 }
 
 /* Media query for medium screens */
@@ -382,11 +386,13 @@ h3,p{
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 16px;
+  text-align: start;
   color: #818181;
   display: block;
   transition: 0.3s;
 }
+
 
 .sidenav a:hover {
   color: #f1f1f1;
